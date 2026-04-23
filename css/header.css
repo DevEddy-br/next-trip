@@ -4,25 +4,118 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 38px 48px;
+  padding: 20px 24px;
+  position: relative;
 }
 
-.icon {
+.img-mobile {
   display: inline-block;
   width: 68px;
   height: 42px;
 }
 
-.icon img {
+.logo-mobile img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-.navegation-menu {
+.img-desktop {
+  display: none;
+  margin-top: -30px;
+  width: 180px;
+  height: 110px;
+}
+
+.logo-desktop img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: -25px;
+}
+
+.navigation-menu {
   margin-top: 8px;
+}
+
+input[type="checkbox"]:checked ~ nav {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
 }
 
 nav {
   display: none;
+}
+
+.list-links {
+  list-style: none;
+}
+
+.list-links li {
+  padding: 16px 0;
+}
+
+.list-links li a {
+  color: var(--text-secondary-color);
+  text-decoration: none;
+  font-weight: var(--menu-text-weight);
+  font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    justify-content: space-between;
+    padding: 38px 48px;
+  }
+  .navigation-menu {
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1; /* ocupa o espaço disponível */
+  }
+  .navigation-menu label {
+    display: none;
+  }
+  .navigation-menu nav {
+    display: block;
+  }
+  .navigation-menu ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .navigation-menu li {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 38px 120px;
+  }
+  .logo {
+    width: 260px;
+    height: 64px;
+  }
+  .img-desktop {
+    display: block;
+  }
+  .img-mobile {
+    display: none;
+  }
+  .navigation-menu a:hover {
+    background: linear-gradient(90deg, #9b59b6, #2daae1, #4a3fdb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@media screen and (min-width: 1920px) {
+  header {
+    padding: 38px 160px;
+  }
 }
