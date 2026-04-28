@@ -22,7 +22,7 @@
 .payments .content-container .image-gallery .image.colspan-2 {
   grid-column: span 2;
 }
-/* 
+
 /* PACOTES DE VIAGENS 
 .travel-packages.payments .content-container .image-gallery .image.first {
   background: url(../img/travel-packages/gallery1-mobile.png) no-repeat;
@@ -49,7 +49,9 @@
   .payments .content-container .image-gallery .image.thirdy {
     background: url(../img/gallery3-tablet.png) no-repeat;
     background-size: cover;
+    background-position: 35% center;
   }
+
   /* /* PACOTES DE VIAGENS 
   .travel-packages.payments .content-container .image-gallery .image.first {
     background: url(../img/travel-packages/gallery1-tablet.png) no-repeat;
