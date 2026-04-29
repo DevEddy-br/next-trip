@@ -1,3 +1,13 @@
+.closing-banner {
+  height: 320px;
+  width: 100%;
+  background-image: url("../img/bg-bottom-banner-mobile.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
 .main-footer {
   background: #000;
   color: #fff;
