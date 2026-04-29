@@ -59,3 +59,17 @@
   transform: translateY(-3px);
   opacity: 0.8;
 }
+
+@media (min-width: 768px) {
+  .closing-banner {
+    height: 420px;
+    background-image: url("../img/bg-bottom-banner-tablet.png");
+  }
+}
+
+@media (min-width: 1440px) {
+  .closing-banner {
+    height: 520px;
+    background-image: url("../img/bg-bottom-banner-desktop.png");
+  }
+}
