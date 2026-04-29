@@ -38,6 +38,5 @@
 @media screen and (min-width: 1440px) {
   .testimonial-container {
     flex-direction: row;
-    gap: 32px;
   }
 }
