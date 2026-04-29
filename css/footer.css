@@ -53,7 +53,7 @@
 @media (min-width: 768px) {
   .closing-banner {
     height: 420px;
-    background-image: url("../img/");
+    background-image: url("../img/banner-tablet.jpg");
   }
 }
 
