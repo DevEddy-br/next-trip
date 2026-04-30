@@ -7,7 +7,6 @@
   background-repeat: no-repeat;
   margin: 0;
 }
-
 .main-footer {
   background: #000;
   color: #fff;
@@ -63,13 +62,13 @@
 @media (min-width: 768px) {
   .closing-banner {
     height: 420px;
-    background-image: url("../img/bg-bottom-banner-tablet.png");
+    background-image: url("../img/banner-tablet.jpg");
   }
 }
 
 @media (min-width: 1440px) {
   .closing-banner {
     height: 520px;
-    background-image: url("../img/bg-bottom-banner-desktop.png");
+    background-image: url("../img/banner-desktop.jpg");
   }
 }
