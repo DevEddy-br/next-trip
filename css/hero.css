@@ -89,9 +89,22 @@
     background: url("../img/hero-tablet.jpg") no-repeat center;
     background-size: cover;
   }
+  .hero-content {
+    max-width: 579px;
+    min-height: 313px;
+    margin-left: 38px;
+    margin-right: 24px;
+  }
+  .hero-content h1 {
+    font-size: 48px;
+  }
   .hero h2 {
     padding: 88px 60px;
     font-size: 32px;
+  }
+  .hero-content p {
+    font-size: 28px;
+    line-height: 1.4;
   }
 }
 

@@ -48,6 +48,12 @@ section {
   margin: 0 auto 88px;
 }
 
+.pacotes-closing-banner {
+  width: 100%;
+  margin: 0;
+  max-width: none;
+}
+
 section.hero,
 section.bottom-hero {
   width: 100%;
@@ -83,7 +89,7 @@ section.bottom-hero {
 }
 
 .button {
-  min-width: 312px;
+  min-width: 280px;
   height: 64px;
   color: var(--text-secondary-color);
   font-weight: var(--title-weight);
