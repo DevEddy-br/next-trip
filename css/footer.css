@@ -7,6 +7,17 @@
   background-repeat: no-repeat;
   margin: 0;
 }
+
+.pacotes-closing-banner {
+  height: 320px;
+  width: 100%;
+  background-image: url("../img/travel-packages/japan-bg-bottom-hero-mobile.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
 .main-footer {
   background-color: var(--background-tertiary-color);
   padding: 2rem;
