@@ -69,7 +69,7 @@
 
 /* linha azul */
 .hero-content hr {
-  width: 220px;
+  width: 150px;
   height: 4px;
   background: var(--secondary-color);
   border: none;
