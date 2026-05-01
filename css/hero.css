@@ -23,7 +23,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(1, 1, 14, 0.4);  
 }
 
 .hero-content {
@@ -36,55 +36,46 @@
 .hero-travel-packages {
   height: 500px;
   width: 100%;
-
   background: url("../img/travel-packages/japan-bg-hero-tablet.png") no-repeat
     center;
   background-size: cover;
-
+  background-position: right;
   position: relative;
   display: flex;
   align-items: center;
 }
 
-/* overlay azul escuro */
-.hero-travel-packages::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 60, 90, 0.75); /* tom parecido com o print */
-}
-
 /* conteúdo */
 .hero-content {
   position: relative;
+  text-align: left;
   color: white;
-
-  max-width: 500px;
-  margin-left: 2rem; /* empurra da esquerda */
+  max-width: 330px;
+  margin-left: 24px; /* empurra da esquerda */
+  margin-right: 24px;
 }
 
 /* título */
 .hero-content h1 {
-  font-size: 2.5rem;
+  font-size: 58px;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
-/* linha vermelha */
+/* linha azul */
 .hero-content hr {
-  width: 120px;
-  height: 3px;
+  width: 220px;
+  height: 4px;
   background: var(--secondary-color);
-
   border: none;
   margin: 1rem 0;
 }
 
 /* texto */
 .hero-content p {
-  font-size: 1rem;
+  font-size: 20px;
   line-height: 1.6;
-  color: #f0f0f0;
+  color: var(--text-secondary-color);
 }
 
 @media screen and (min-width: 768px) {
