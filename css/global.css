@@ -83,7 +83,7 @@ section.bottom-hero {
 }
 
 .button {
-  min-width: 280px;
+  min-width: 312px;
   height: 64px;
   color: var(--text-secondary-color);
   font-weight: var(--title-weight);
