@@ -6,6 +6,11 @@
   margin-top: 24px;
   width: 100%;
 }
+.payments .image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 .content-title-valores {
   font-size: 40px;
@@ -19,71 +24,82 @@
   margin: 0 0 24px;
 }
 
-.payments .content-container .image.first {
-  background: url(../img/gallery1-mobile.jpg) no-repeat;
-  background-size: cover;
+.payments--default .image.first {
+  background-image: url(../img/gallery1-mobile.jpg);
 }
 
-.payments .content-container .image-gallery .image.second {
-  background: url(../img/gallery2-mobile.jpg) no-repeat;
-  background-size: cover;
+.payments--default .image.second {
+  background-image: url(../img/gallery2-mobile.jpg);
 }
 
-.payments .content-container .image-gallery .image.thirdy {
-  background: url(../img/gallery3-mobile.jpg) no-repeat;
-  background-size: contain;
+.payments--default .image.third {
+  background-image: url(../img/gallery3-mobile.jpg);
 }
 
-.payments .content-container .image-gallery .image.colspan-2 {
+.payments--default .image.colspan-2 {
   grid-column: span 2;
 }
+
 /* PACOTES DE VIAGENS */
-.travel-packages.payments .content-container .image-gallery .image.first {
-  background: url(../img/travel-packages/gallery1-mobile.png) no-repeat;
-  background-size: cover;
+.payments--travel .image.first {
+  background-image: url(../img/travel-packages/gallery1-mobile.png);
 }
 
-.travel-packages.payments .content-container .image-gallery .image.second {
-  background: url(../img/travel-packages/gallery2-mobile.png) no-repeat;
-  background-size: cover;
+.payments--travel .image.second {
+  background-image: url(../img/travel-packages/gallery2-mobile.png);
 }
 
-.travel-packages.payments .content-container .image-gallery .image.thirdy {
-  background: url(../img/travel-packages/gallery3-mobile.png) no-repeat;
-  background-size: cover;
+.payments--travel .image.third {
+  background-image: url(../img/travel-packages/gallery3-mobile.png);
   background-position: top;
 }
 
-.travel-packages.payments .content-container .image-gallery .image.colspan-2 {
+.payments--travel .image.colspan-2 {
   grid-column: span 2;
 }
 
-@media screen and (min-width: 768px) {
-  .payments .content-container .image-gallery .image.first {
-    background: url(../img/gallery1-tablet.png) no-repeat;
-    background-size: cover;
+@media (min-width: 768px) {
+  .payments--default .image.first {
+    background-image: url(../img/gallery1-tablet.png);
   }
-  .payments .content-container .image-gallery .image.second {
-    background: url(../img/gallery2-tablet.png) no-repeat;
-    background-size: cover;
+
+  .payments--default .image.second {
+    background-image: url(../img/gallery2-tablet.png);
   }
-  .payments .content-container .image-gallery .image.thirdy {
-    background: url(../img/gallery3-tablet.png) no-repeat;
-    background-size: cover;
-    background-position: 65% center;
+
+  .payments--default .image.third {
+    background-image: url(../img/gallery3-tablet.png);
+  }
+
+  .payments--default .image.colspan-2 {
+    grid-column: span 2;
+  }
+
+  /* PACOTES DE VIAGENS */
+  .payments--travel .image.first {
+    background-image: url(../img/travel-packages/gallery1-tablet.png);
+  }
+
+  .payments--travel .image.second {
+    background-image: url(../img/travel-packages/gallery2-tablet.png);
+  }
+
+  .payments--travel .image.third {
+    background-image: url(../img/travel-packages/gallery3-mobile.png);
   }
 }
 
-@media screen and (min-width: 1440px) {
-  .payments .content-container {
+@media (min-width: 1440px) {
+  .payments {
     display: flex;
     justify-content: space-between;
   }
-  .payments .content-container .text-content {
-    width: 360px;
+  .payments .text-content {
+    max-width: 360px;
+    width: 100%;
   }
-  .payments .content-container .image-gallery {
-    width: 790px;
-    margin: 0;
+  .payments .image-gallery {
+    flex: 1;
+    margin-left: 24px;
   }
 }
