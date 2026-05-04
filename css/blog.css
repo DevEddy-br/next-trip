@@ -1,0 +1,15 @@
+.destination-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.destination-section img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.destination-caption {
+  font-size: 14px;
+  color: #666;
+}
