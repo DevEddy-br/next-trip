@@ -31,6 +31,23 @@
   pointer-events: none;
 }
 
+.hero--blog {
+  height: 500px;
+  width: 100%;
+  background: url("../img/blog-packages/blog-bg-hero-mobile.jpg") no-repeat
+    center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.hero--blog::before {
+  content: "";
+  position: relative;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.43);
+}
+
 .hero-content {
   position: relative;
   color: var(--text-secondary-color);
@@ -76,6 +93,7 @@
     background: url("../img/hero-tablet.jpg") no-repeat center;
     background-size: cover;
   }
+
   .hero-content {
     max-width: 579px;
     min-height: 313px;
@@ -89,6 +107,13 @@
   }
   .hero-content p {
     font-size: 32px;
+  }
+
+  .hero--blog {
+    height: 620px;
+    background: url("../img/blog-packages/blog-bg-hero-tablet.jpg") no-repeat
+      center;
+    background-size: cover;
   }
 }
 
