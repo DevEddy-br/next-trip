@@ -11,7 +11,7 @@
 .pacotes-closing-banner {
   height: 320px;
   width: 100%;
-  background-image: url("../img/travel-packages/japan-bg-bottom-hero-mobile.png");
+  background-image: url("../img/travel-packages/japan-bg-bottom-banner-mobile.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -71,9 +71,13 @@
 
 @media (min-width: 768px) {
   .closing-banner {
-    height: 620px;
+    height: 480px;
     background-image: url("../img/bg-bottom-banner-tablet.png");
-    background-position: right;
+  }
+  .pacotes-closing-banner {
+    height: 620px;
+    background-image: url("../img/travel-packages/japan-bg-bottom-banner-tablet.png");
+    background-position: center;
   }
   .footer-left {
     margin-bottom: auto;
@@ -81,8 +85,12 @@
 }
 
 @media (min-width: 1024px) {
-  .closing-banner {
+  .closing-banner{
     background-image: url("../img/bg-bottom-banner-desktop.png");
+  }
+
+  .pacotes-closing-banner {
+    background-image: url("../img/travel-packages/japan-bg-bottom-banner-desktop.png");
   }
   .footer-container {
     flex-direction: row;
@@ -101,7 +109,7 @@
 }
 
 @media (min-width: 1440px) {
-  .closing-banner {
+  .pacotes-closing-banner {
     height: 900px;
   }
 }

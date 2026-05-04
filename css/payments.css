@@ -51,7 +51,6 @@
 
 .payments--travel .image.third {
   background-image: url(../img/travel-packages/gallery3-mobile.png);
-  background-position: top;
 }
 
 .payments--travel .image.colspan-2 {
@@ -85,21 +84,25 @@
   }
 
   .payments--travel .image.third {
-    background-image: url(../img/travel-packages/gallery3-mobile.png);
+    background-image: url(../img/travel-packages/gallery3-tablet.png);
   }
 }
 
 @media (min-width: 1440px) {
-  .payments {
+  .payments .content-container {
     display: flex;
+    align-items: center; /* alinha verticalmente */
     justify-content: space-between;
+    gap: 40px;
   }
+
   .payments .text-content {
-    max-width: 360px;
-    width: 100%;
+    flex: 1;
+    max-width: 400px;
   }
+
   .payments .image-gallery {
     flex: 1;
-    margin-left: 24px;
+    margin-top: 0; /* remove o espaço do mobile */
   }
 }
