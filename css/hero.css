@@ -33,9 +33,20 @@
 
 .hero-content {
   position: relative;
-  color: #fff;
-  text-align: center;
-  max-width: 600px;
+  color: var(--text-secondary-color);
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  line-height: 1.6;
 }
 
 .hero-travel-packages {
@@ -50,37 +61,13 @@
   align-items: center;
 }
 
-/* conteúdo */
-.hero-content {
-  position: relative;
-  text-align: left;
-  color: white;
-  max-width: 330px;
-  margin-left: 24px; /* empurra da esquerda */
-  margin-right: 24px;
-}
-
-/* título */
-.hero-content h1 {
-  font-size: 40px;
-  font-weight: 700;
-  margin-bottom: 16px;
-}
-
 /* linha azul */
 .hero-content hr {
-  width: 150px;
+  width: 180px;
   height: 4px;
   background: var(--secondary-color);
   border: none;
   margin: 1rem 0;
-}
-
-/* texto */
-.hero-content p {
-  font-size: 20px;
-  line-height: 1.6;
-  color: var(--text-secondary-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -95,16 +82,13 @@
     margin-left: 38px;
     margin-right: 24px;
   }
-  .hero-content h1 {
-    font-size: 48px;
-  }
+
   .hero h2 {
     padding: 88px 60px;
     font-size: 32px;
   }
   .hero-content p {
-    font-size: 28px;
-    line-height: 1.4;
+    font-size: 32px;
   }
 }
 
@@ -119,6 +103,13 @@
     padding: 88px 120px;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .hero-content {
+    padding: 0 88px;
+  }
+}
+
 @media screen and (min-width: 1920px) {
   .hero-img {
     height: 620px;
