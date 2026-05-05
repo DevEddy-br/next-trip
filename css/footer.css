@@ -42,6 +42,11 @@
   gap: 1rem;
 }
 
+.footer-logo {
+  display: flex;
+  justify-content: center;
+}
+
 .footer-logo img {
   width: 140px;
 }
@@ -85,7 +90,7 @@
 }
 
 @media (min-width: 1024px) {
-  .closing-banner{
+  .closing-banner {
     background-image: url("../img/bg-bottom-banner-desktop.png");
   }
 
