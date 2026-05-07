@@ -1,4 +1,5 @@
 .destination-content {
+  margin: auto 36px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -11,4 +12,47 @@
 .destination-caption {
   font-size: 14px;
   color: #666;
+}
+
+@media screen and (min-width: 768px) {
+  .destination-section:first-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "title image"
+      "text  image";
+    gap: 24px;
+    align-items: center;
+  }
+
+  .destination-section:first-child h3 {
+    grid-area: title;
+    margin: 0;
+  }
+
+  .destination-section:first-child p {
+    grid-area: text;
+  }
+
+  .destination-section:first-child img {
+    grid-area: image;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .destination-section:first-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+    min-height: 360px;
+  }
+  .destination-section:first-child .text-content {
+    max-width: 480px;
+  }
+  .destination-section:first-child img {
+    width: 100%;
+    height: 360px; /* 👈 altura do Figma */
+    object-fit: cover; /* 👈 evita deformar */
+  }
 }
