@@ -62,8 +62,9 @@
 }
 
 .hero-content p {
+  max-width: 312px;
   font-size: 20px;
-  line-height: 1.6;
+  line-height: 160%;
 }
 
 .hero-travel-packages {
