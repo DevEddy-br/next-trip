@@ -84,6 +84,7 @@ section.bottom-hero {
 .section-title {
   max-width: 280px;
   width: 100%;
+  margin: 0 auto 0;
 }
 
 .section-title h2 {
