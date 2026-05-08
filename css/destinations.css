@@ -9,85 +9,102 @@
   padding: 16px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 88px;
   gap: 24px;
+  margin-bottom: 88px;
+  width: 100%;
+  box-sizing: border-box;
 }
+
+/* imagens */
 
 .destinations .item .img-item {
   width: 100%;
   height: 368px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
 }
+
 .destinations .item.tokyo .img-item {
-  background: url(../img/tokyo-mobile.jpg);
-  width: 100%;
-  background-size: cover;
+  background: url(../img/tokyo-mobile.jpg) center/cover;
 }
+
 .destinations .item.osaka .img-item {
-  background: url(../img/osaka-mobile.jpg);
-  background-size: cover;
+  background: url(../img/osaka-mobile.jpg) center/cover;
 }
 
 .destinations .item.hiroshima .img-item {
-  background: url(../img/blog-packages/post-hiroshima-banner.jpg);
-  background-size: cover;
-  background-position: center;
+  background: url(../img/blog-packages/post-hiroshima-banner.jpg) center/cover;
 }
 
 .destinations .item.kyoto .img-item {
-  background: url(../img/blog-packages/post-kyoto-banner.jpg);
-  background-size: cover;
-  background-position: center;
+  background: url(../img/blog-packages/post-kyoto-banner.jpg) center/cover;
 }
+
+/* conteúdo */
 
 .destinations .item header h3 {
   margin: 24px 0;
 }
+
 .destinations .item p {
   margin-bottom: 24px;
+  line-height: 1.6;
 }
+
+/* botão */
+
 .destinations .button {
   width: 100%;
 }
 
+/* ===== TABLET ===== */
 @media screen and (min-width: 768px) {
   .destinations {
     max-width: 648px;
   }
+
   .destinations .item .img-item {
-    width: 100%;
     height: 452px;
   }
+
   .destinations .item.tokyo .img-item {
-    background: url(../img/tokyo-tablet-desktop.jpg);
-    background-size: cover;
+    background: url(../img/tokyo-tablet-desktop.jpg) center/cover;
   }
+
   .destinations .item.osaka .img-item {
-    background: url(../img/osaka-tablet-desktop.jpg);
-    background-size: cover;
+    background: url(../img/osaka-tablet-desktop.jpg) center/cover;
   }
+
   .destinations .button {
     width: 280px;
   }
 }
+
+/* ===== DESKTOP ===== */
 @media screen and (min-width: 1024px) {
   .destinations {
-    max-width: 900px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+  }
+
+  .destinations-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: start;
+    margin-bottom: 104px;
+  }
+
+  .destination-items {
+    margin-bottom: 0;
+    min-width: 0;
   }
 
   .destinations .item .img-item {
-    width: 100%;
-    height: 452px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .destinations {
-    max-width: 1200px;
-  }
-  .destination-items {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .destinations .item {
-    width: 48%;
+    height: 220px;
   }
 }
