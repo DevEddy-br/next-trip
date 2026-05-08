@@ -43,7 +43,7 @@
 
 .footer-logo {
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 
 .footer-logo img {
@@ -97,19 +97,12 @@
     background-image: url("../img/travel-packages/japan-bg-bottom-banner-desktop.png");
   }
   .container {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    margin: auto var(--spacing-xl);
-  }
-
-  .footer-left {
+    align-items: flex-start;
+    gap: 0;
     text-align: left;
-  }
-
-  .footer-right {
-    text-align: right;
-    align-items: flex-end;
   }
 }
 
