@@ -1,3 +1,11 @@
+.main-footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 32px;
+}
+
 .closing-banner {
   height: 320px;
   width: 100%;
@@ -23,17 +31,6 @@
   padding: 2rem;
 }
 
-.container {
-  max-width: 1920px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 3rem;
-}
-
 .footer-left,
 .footer-right {
   display: flex;
@@ -41,9 +38,13 @@
   gap: 1rem;
 }
 
+.footer-right {
+  align-items: center;
+}
+
 .footer-logo {
   display: flex;
-  justify-content: left;
+  justify-content: center;
 }
 
 .footer-logo img {
@@ -89,20 +90,23 @@
 }
 
 @media (min-width: 1024px) {
+  .main-footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .footer-logo {
+    justify-content: left;
+  }
+
   .closing-banner {
     background-image: url("../img/bg-bottom-banner-desktop.png");
   }
 
   .pacotes-closing-banner {
     background-image: url("../img/travel-packages/japan-bg-bottom-banner-desktop.png");
-  }
-  .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 0;
-    text-align: left;
   }
 }
 

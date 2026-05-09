@@ -55,6 +55,25 @@ img {
   border-radius: 0;
 }
 
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 48px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .container {
+    padding: 0 160px;
+  }
+}
+
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -64,13 +83,6 @@ body {
 
 section {
   margin-bottom: var(--spacing-xl);
-}
-
-.container {
-  text-align: left;
-  max-width: var(--container-width);
-  margin: 0 auto;
-  padding: 0 24px;
 }
 
 .pacotes-closing-banner {
@@ -83,7 +95,7 @@ section.bottom-hero {
 }
 
 .section-title {
-  max-width: 280px;
+  max-width: 360px;
   width: 100%;
   margin: 0 auto;
 }
@@ -106,8 +118,8 @@ section.bottom-hero {
 .content-title {
   font-size: 28px;
   font-weight: var(--title-weight);
-  margin: 0 0 24px;
 }
+
 .content-text {
   font-size: 20px;
   font-weight: var(--text-weight);
@@ -127,6 +139,12 @@ section.bottom-hero {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+/* modificador */
+.button-full {
+  width: 100%;
+  min-width: unset;
 }
 
 .scroll-top {

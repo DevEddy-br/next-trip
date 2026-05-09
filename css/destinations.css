@@ -16,13 +16,45 @@
 }
 
 /* imagens */
-
 .destinations .item .img-item {
   width: 100%;
   height: 368px;
   background-size: cover;
   background-position: center;
-  border-radius: 12px;
+}
+
+/* TÍTULO NO TOPO DIREITO */
+.content-title {
+  grid-area: title;
+  text-align: left;
+}
+
+/* TEXTO À ESQUERDA */
+.content-text {
+  grid-area: text;
+}
+
+/* BLOCO DA IMAGEM À DIREITA */
+.image-block {
+  grid-area: image;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* IMAGEM */
+.image-block img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* LEGENDA CENTRALIZADA */
+.destination-caption {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
 }
 
 .destinations .item.tokyo .img-item {
@@ -52,17 +84,39 @@
   line-height: 1.6;
 }
 
-/* botão */
-
-.destinations .button {
-  width: 100%;
-}
-
 /* ===== TABLET ===== */
 @media screen and (min-width: 768px) {
-  .destinations {
-    max-width: 648px;
+  /* seção texto + imagem */
+  .destination-section.has-image {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
   }
+
+  /* força as duas colunas ocuparem espaço igual */
+  .destination-section img,
+  .destination-section .text-content {
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* imagem */
+  .destination-section .img-item {
+    width: 100%;
+    height: 100%;
+    min-height: 420px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+  }
+
+  /* cards */
+  .destination-items {
+    margin-bottom: 0;
+  }
+
+  /* imagens dos cards */
 
   .destinations .item .img-item {
     height: 452px;
@@ -75,22 +129,20 @@
   .destinations .item.osaka .img-item {
     background: url(../img/osaka-tablet-desktop.jpg) center/cover;
   }
-
-  .destinations .button {
-    width: 280px;
-  }
 }
 
 /* ===== DESKTOP ===== */
 @media screen and (min-width: 1024px) {
-  .destinations {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 24px;
-    box-sizing: border-box;
+  .accommodation-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    grid-template-areas:
+      "title title"
+      "image text"
+      "image text";
+    gap: 24px;
+    align-items: start;
   }
-
   .destinations-grid {
     width: 100%;
     display: grid;
@@ -98,12 +150,13 @@
     align-items: start;
     margin-bottom: 104px;
   }
-
+  .content-text {
+    line-height: 2;
+  }
   .destination-items {
     margin-bottom: 0;
     min-width: 0;
   }
-
   .destinations .item .img-item {
     height: 220px;
   }

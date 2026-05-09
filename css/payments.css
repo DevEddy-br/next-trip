@@ -88,21 +88,44 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .payments .content-container {
-    display: flex;
-    align-items: center; /* alinha verticalmente */
-    justify-content: space-between;
-    gap: 40px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 32px;
+    align-items: center;
   }
 
-  .payments .text-content {
-    flex: 1;
-    max-width: 400px;
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
 
-  .payments .image-gallery {
-    flex: 1;
-    margin-top: 0; /* remove o espaço do mobile */
+  .image.third {
+    grid-column: span 2;
+  }
+  .destinations-grid-travel {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    margin-bottom: 104px;
+  }
+
+  .destinations .item .img-item {
+    height: 220px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .payments .section-title {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .payments .section-title hr {
+    margin-inline: auto;
   }
 }
