@@ -102,11 +102,17 @@
     margin-right: 24px;
   }
 
+  .hero-content h1 {
+    white-space: nowrap;
+  }
+
   .hero h2 {
     padding: 88px 60px;
     font-size: 32px;
   }
   .hero-content p {
+    max-width: 480px;
+    line-height: 130%;
     font-size: 32px;
   }
 

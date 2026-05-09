@@ -3,7 +3,8 @@
 }
 
 .offers-cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr; /* mobile padrão */
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -68,6 +69,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .container {
+    max-width: 800px;
+  }
   .offers-cards {
     flex-direction: row;
     flex-wrap: wrap;
