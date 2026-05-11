@@ -75,6 +75,24 @@
 }
 
 @media (min-width: 768px) {
+  .offers-cards {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 24px;
+
+    width: 100%;
+    max-width: 920px;
+
+    margin: 0 auto;
+    padding: 24px;
+
+    box-sizing: border-box;
+  }
+  .offers-cards > * {
+    min-width: 0;
+  }
   .closing-banner {
     height: 480px;
     background-image: url("../img/bg-bottom-banner-tablet.png");
@@ -96,15 +114,12 @@
     align-items: flex-start;
     text-align: left;
   }
-
   .footer-logo {
     justify-content: left;
   }
-
   .closing-banner {
     background-image: url("../img/bg-bottom-banner-desktop.png");
   }
-
   .pacotes-closing-banner {
     background-image: url("../img/travel-packages/japan-bg-bottom-banner-desktop.png");
   }
