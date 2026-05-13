@@ -126,6 +126,7 @@ section.bottom-hero {
   line-height: 32px;
 }
 
+
 .button {
   min-width: 280px;
   height: 64px;
@@ -134,11 +135,10 @@ section.bottom-hero {
   font-size: 20px;
   background-color: var(--secondary-color);
   border-radius: 16px;
-  cursor: pointer;
+  display: inline-block;
   text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  line-height: 64px;
+  text-align: center;
 }
 
 /* modificador */

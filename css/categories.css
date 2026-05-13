@@ -40,6 +40,10 @@
   .categories-cards .card {
     width: 430px;
   }
+  .categories-cards {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 }
 
 @media screen and (min-width: 1440px) {
