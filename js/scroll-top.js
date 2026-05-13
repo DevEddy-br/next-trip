@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
   const scrollTopButton = document.querySelector('.scroll-top');
-  const heroSection = document.querySelector('section.hero, section.hero-travel-packages');
+  const headerSection = document.querySelector('section.hero, section.hero-travel-packages');
 
-  if (!scrollTopButton || !heroSection) {
+  if (!scrollTopButton || !headerSection) {
     return;
   }
 
@@ -23,5 +23,5 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   );
 
-  observer.observe(heroSection);
+  observer.observe(headerSection);
 });
