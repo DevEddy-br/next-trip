@@ -26,6 +26,16 @@
   margin: 0;
 }
 
+.banner-img {
+  height: 320px;
+  width: 100%;
+  background-image: url("../img/contato-packages/contato-bg-banner-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
 .main-footer {
   background-color: var(--background-tertiary-color);
   padding: 2rem;
