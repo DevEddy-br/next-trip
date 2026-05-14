@@ -48,6 +48,23 @@
   background: rgba(0, 0, 0, 0.43);
 }
 
+.hero--contact {
+  height: 500px;
+  width: 100%;
+  background: url("../img/contato-packages/contato-bg-hero-mobile.jpg")
+  no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.hero--contact::before {
+  content: "";
+  position: relative;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.43);
+}
+
 .hero-content {
   position: relative;
   color: var(--text-secondary-color);
