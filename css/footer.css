@@ -94,6 +94,10 @@
     background-image: url("../img/travel-packages/japan-bg-bottom-banner-tablet.png");
     background-position: center;
   }
+  .banner-img {
+    height: 320px;
+    background-image: url("../img/contato-packages/contato-bg-banner-tablet.jpg");
+  }
   .footer-left {
     margin-bottom: auto;
   }
@@ -115,10 +119,17 @@
   .pacotes-closing-banner {
     background-image: url("../img/travel-packages/japan-bg-bottom-banner-desktop.png");
   }
+  .banner-img {
+    height: 500px;
+    background-image: url("../img/contato-packages/contato-bg-banner-desktop.jpg");
+  }
 }
 
 @media (min-width: 1440px) {
   .pacotes-closing-banner {
     height: 900px;
+  }
+  .banner-img {
+    height: 800px;
   }
 }
