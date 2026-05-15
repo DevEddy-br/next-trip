@@ -79,6 +79,7 @@ h2 {
   text-align: center;
   outline: none;
   box-shadow: none;
+  border: none;
 }
 
 .contact-form button:hover {
