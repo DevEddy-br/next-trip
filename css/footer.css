@@ -29,6 +29,16 @@
 .banner-img {
   height: 320px;
   width: 100%;
+  background-image: url("../img/bg-bottom-banner-tablet.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+.contact-banner-img {
+  height: 320px;
+  width: 100%;
   background-image: url("../img/contato-packages/contato-bg-banner-mobile.jpg");
   background-size: cover;
   background-position: center;
@@ -95,8 +105,12 @@
     background-position: center;
   }
   .banner-img {
-    height: 320px;
-    background-image: url("../img/contato-packages/contato-bg-banner-tablet.jpg");
+    height: 480px;
+    background-image: url("../img/bg-bottom-banner-mobile.png");
+  }
+  .contact-banner-img {
+    height: 480px;
+    background-image: url("../img/contato-packages/contato-bg-banner-mobile.jpg");  
   }
   .footer-left {
     margin-bottom: auto;
@@ -120,6 +134,10 @@
     background-image: url("../img/travel-packages/japan-bg-bottom-banner-desktop.png");
   }
   .banner-img {
+    height: 500px;    
+    background-image: url("../img/bg-bottom-banner-desktop.png");
+  }
+  .contact-banner-img {
     height: 500px;
     background-image: url("../img/contato-packages/contato-bg-banner-desktop.jpg");
   }
@@ -130,6 +148,17 @@
     height: 900px;
   }
   .banner-img {
-    height: 800px;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .contact-banner-img {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
